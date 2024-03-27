@@ -22,8 +22,6 @@ Here is a sample prompt that will cause ChatGPT to generate a list of songs and 
 
 Once ChatGPT provides the list, it will be in a code block format, making it easy for you to copy and paste directly into the script:
 
-Just replace the sample IDs above with the actual IDs provided by ChatGPT.
-
 ## Requirements
 
 Before you dive in, make sure you've got:
@@ -64,14 +62,20 @@ Before you dive in, make sure you've got:
     🎶💞
     ```
 
-## How to Use
+## Usage
+    ```shell
+    playlist.py
+    # when run without parameters it runs interactively which makes it easy to past the list into the script.
 
-1. Clone this repository to your local machine.
-2. Navigate to the project directory and activate your virtual environment.
-3. Install the required packages using `pip install -r requirements.txt`.
-4. Run the script with `python playlist_maker.py` and follow the prompts.
-5. Enjoy your new playlist and the free time you've just created!
+    playlist.py <playlistID> <path>
 
+    # Parameters:
+    # <playlistID>: The YouTube Music playlist ID.
+    # <path>: The path to a file containing a comma-separated list of YouTube Music video IDs.
+
+    # Example:
+    playlist.py PL12345abcdefg /path/to/video_ids.txt
+    ```
 ## Contributing
 
 In the spirit of music, which brings people together, we're committed to creating a welcoming and inclusive environment in this project. Here's our anthem:
@@ -80,7 +84,7 @@ In the spirit of music, which brings people together, we're committed to creatin
 
 - **No Bullying or Harassment**: Bullying, harassment, and other forms of aggression are not tolerated here. Let's build each other up, not tear each other down.
 
-- **Be Excellent to Each Other**: Avoid being a general... well, you know. Be thoughtful, be helpful, and be cool.
+- **Be Excellent to Each Other**: Be thoughtful, be helpful, and be cool.
 
 ### Making Contributions
 
