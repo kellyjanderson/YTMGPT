@@ -4,13 +4,11 @@ Hello, music lovers and coders alike! 👋🎶
 
 Are you tired of the endless copy-and-paste marathon just to curate your dream playlist? Worried about developing a "Repetitive Stress Injury" from all that clicking and typing? (Okay, that might be a stretch, but you get the point!) Well, you've come to the right place! This script was inspired by my own lazy... I mean, efficient... desires to build YouTube playlists using the wondrous powers of ChatGPT, minus the carpal tunnel.
 
-## What's This All About?
-
 This script is designed to streamline the creation of YouTube playlists with a little help from our friend, ChatGPT. Instead of manually copying and pasting song IDs like a 19th-century telegraph operator, why not let this handy tool do the heavy lifting?
 
 ### Features
 
-- Generate YouTube Playlists with minimal manual effort.
+- Update YouTube Playlists with minimal manual effort.
 - Avoid unnecessary strain on your delicate, human hands.
 - Impress your friends with your impeccable music taste (and your coding skills).
 
@@ -65,7 +63,7 @@ Before you dive in, make sure you've got:
 ## Usage
     ```shell
     playlist.py
-    # when run without parameters it runs interactively which makes it easy to past the list into the script.
+    # when run without parameters it runs interactively which makes it easy to paste the list into the script.
 
     playlist.py <playlistID> <path>
 
