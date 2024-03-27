@@ -50,6 +50,15 @@ Before you dive in, make sure you've got:
     ```shell
     sed -i '' '1s|.*|#!'"$(pwd)"'/.venv/bin/python|' your_script.py
     ```
+- Optionally add the project directory to your path
+> bash:
+    ```shell
+    echo 'export PATH="./:$PATH"' >> ~/.bashrc
+    ```
+> zsh:
+    ```shell
+    echo 'export PATH="./:$PATH"' >> ~/.zshrc
+    ```
 - A love for music.
     ```bash
     🎶💞
