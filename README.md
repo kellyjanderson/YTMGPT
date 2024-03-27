@@ -40,8 +40,16 @@ Before you dive in, make sure you've got:
     ```
 - The download or clone the project.
     ```shell
-    git clone 
+    git clone https://github.com/kellyjanderson/YTMGPT.git
     ```    
+- Make playlist,py executable
+    ```shell
+    chmod +x playlist.py
+    ```    
+- Update the shebang in playlsit.py to point at your python interpreter
+    ```shell
+    sed -i '' '1s|.*|#!'"$(pwd)"'/.venv/bin/python|' your_script.py
+    ```
 - A love for music.
     ```bash
     🎶💞
