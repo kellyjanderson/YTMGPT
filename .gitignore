@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+env/
+
+# Authentication file
+oauth.json
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python debugging files
+*.pdb
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python build directories
+build/
+dist/
+*.egg-info/
+
+# Pytest cache
+.pytest_cache/
