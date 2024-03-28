@@ -5,7 +5,7 @@ import subprocess
 import sys
 from ytmusicapi import YTMusic
 
-CONFIG_PATH = os.path.expanduser('~/.youtube/music')
+CONFIG_PATH = os.path.expanduser('~/.YTMGPT/music')
 
 def ensure_config_path():    
     # Check if the directory exists, and create it if it doesn't
