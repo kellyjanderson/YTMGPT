@@ -5,13 +5,24 @@ import subprocess
 import sys
 from ytmusicapi import YTMusic
 
+CONFIG_PATH = os.path.expanduser('~/.youtube/music')
+
+def ensure_config_path():    
+    # Check if the directory exists, and create it if it doesn't
+    if not os.path.exists(CONFIG_PATH):
+        os.makedirs(CONFIG_PATH)
+        
+    return None
+
 def authenticate_ytmusic():
-    if not os.path.exists('oauth.json'):
-        print("Authentication file 'oauth.json' is missing. Launching authentication process...")
-        subprocess.run(['ytmusicapi', 'oauth'])
+    ensure_config_path()
+    if not os.path.exists(f"{CONFIG_PATH}/oauth.json"):
+        print("Authenticating")
+        subprocess.run(['ytmusicapi', 'oauth'], cwd=CONFIG_PATH, stdout=subprocess.DEVNULL)
     
     try:
-        return YTMusic('oauth.json')
+        print("Authenticated!")
+        return YTMusic(f"{CONFIG_PATH}/oauth.json")
     except Exception as e:
         print("An error occurred during YTMusic initialization:", e)
         return None
@@ -43,4 +54,4 @@ if yt:
         except Exception as e:
             print("An error occurred when adding songs to the playlist:", e)
 else:
-    print("Authentication failed. Please rerun the script after completing the authentication process.")
+    print("Authentication failed.")
